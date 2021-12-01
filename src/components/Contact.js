@@ -1,10 +1,18 @@
 import React from "react";
 import ContactHero from "../img/contact-hero.png";
 import "../styles/contact.css";
+import { useNav } from "../nav-context";
 
 export function Contact() {
+  const { setShowMenu } = useNav();
+
   return (
-    <div className="container contact">
+    <div
+      className="container contact"
+      onClick={() => {
+        setShowMenu(false);
+      }}
+    >
       <div className="contact-head">
         <img src={ContactHero} alt="" className="contact-hero" />
         <div className="contact-head-text">

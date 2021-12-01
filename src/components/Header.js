@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "../img/logo.png";
 import { SideNav } from "./SideNav";
 import { NavLink } from "react-router-dom";
+import { useNav } from "../nav-context";
 
 export function Header() {
-  const [showMenu, setShowMenu] = useState(false);
+  const { showMenu, setShowMenu } = useNav();
 
   function active({ isActive }) {
     return {
