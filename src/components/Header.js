@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../img/logo.png";
+import { SideNav } from "./SideNav";
 import { NavLink } from "react-router-dom";
 
 export function Header() {
+  const [showMenu, setShowMenu] = useState(false);
+
   function active({ isActive }) {
     return {
       fontWeight: isActive && "bold",
@@ -19,11 +22,16 @@ export function Header() {
             <img src={logo} alt="pacific-international-logo" className="logo" />
           </NavLink>
         </div>
-        <div>
+        <div className="list-menu">
           <ul className="list-non-bullet">
             <li className="list-item-inline">
               <NavLink to="/" style={active}>
                 Home
+              </NavLink>
+            </li>
+            <li className="list-item-inline">
+              <NavLink to="/product-portfolio" style={active}>
+                Products
               </NavLink>
             </li>
             <li className="list-item-inline">
@@ -38,6 +46,15 @@ export function Header() {
             </li>
           </ul>
         </div>
+        <div
+          className="ham-menu"
+          onClick={() => {
+            setShowMenu((prevState) => !prevState);
+          }}
+        >
+          <span className="material-icons">menu</span>
+        </div>
+        {showMenu && <SideNav />}
       </nav>
     </div>
   );
