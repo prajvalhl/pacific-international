@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+/* Top level code is written for desptop layout, for mobile layout - write your code in the 
+media query */
 
 /* colors */
 :root {
-  --primary-color: #000841;
-  --secondary-color: #3154a0;
+  --secondary-color: #000841;
+  --primary-color: #3154a0;
+  --border-color: #dadce0;
 }
 
 body {
@@ -23,6 +26,8 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
+  background-color: white;
 }
 
 .navigation {
@@ -33,6 +38,32 @@ body {
 
 .logo {
   max-width: 30%;
+}
+
+.ham-menu {
+  display: none;
+  color: var(--primary-color);
+}
+
+/* side navbar */
+.side-nav {
+  position: fixed;
+  top: 4.5rem;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  border-left: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-end-start-radius: 0.5rem;
+  height: 70%;
+}
+
+.side-nav div {
+  padding: 1rem 7rem 1rem 2rem;
 }
 
 /* general styles */
@@ -49,4 +80,26 @@ body {
 .container {
   width: 80%;
   margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding-top: 5rem;
+  }
+
+  .list-menu {
+    display: none;
+  }
+
+  .ham-menu {
+    display: block;
+  }
+
+  .logo {
+    max-width: 80%;
+  }
+
+  .container {
+    width: 100%;
+  }
 }
