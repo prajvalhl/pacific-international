@@ -1,0 +1,15 @@
+.footer {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer-img {
+  width: 10%;
+}
+
+@media (max-width: 700px) {
+  .footer-img {
+    width: 30%;
+  }
+}
