@@ -53,7 +53,11 @@ export function Header() {
             setShowMenu((prevState) => !prevState);
           }}
         >
-          <span className="material-icons">menu</span>
+          {showMenu ? (
+            <span className="material-icons">close</span>
+          ) : (
+            <span className="material-icons">menu</span>
+          )}
         </div>
         {showMenu && <SideNav />}
       </nav>

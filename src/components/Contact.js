@@ -28,7 +28,7 @@ export function Contact() {
             <p>ADDRESS</p>
           </div>
           <div>
-            <p>PACIFIC INTERNATIONAL</p>
+            <p style={{ fontWeight: "bold" }}>PACIFIC INTERNATIONAL</p>
             <p>
               Plot No. 86-C, Jigani Phase 1, Jigani Industrial Area, Jigani
               Hobali, Anekal Taluk, Bangalore 560 105, Karnataka, India.
