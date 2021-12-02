@@ -6,6 +6,12 @@ import product3 from "../img/product3.png";
 export function Product() {
   return (
     <div className="container product">
+      <div className="contact-head">
+        <img src={product2} alt="" className="contact-hero" />
+        <div className="contact-head-text">
+          <p>PRODUCTS</p>
+        </div>
+      </div>
       <div className="product-images">
         <img src={product1} alt="product-1" />
         <img src={product2} alt="product-2" />
