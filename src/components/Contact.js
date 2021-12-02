@@ -36,7 +36,7 @@ export function Contact() {
           </div>
           <div>
             <p>Call us:</p>
-            <a href="tel:+919845534003">+91 98450 15958</a>
+            <a href="tel:+919845015958">+91 98450 15958</a>
           </div>
         </div>
         <div className="contact-card">
