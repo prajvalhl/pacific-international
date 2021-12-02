@@ -65,6 +65,38 @@ body {
 .side-nav div {
   padding: 1rem 0;
   text-align: center;
+  text-shadow: 0 0 5px rgba(49, 84, 160, 0.5);
+}
+
+/* products */
+.product {
+  position: relative;
+  height: 100vh;
+  padding-top: 1rem;
+}
+
+.product-images {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.product-images img {
+  display: block;
+  background-color: var(--border-color);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.product-image-1 {
+  width: 12rem;
+}
+.product-image-2 {
+  width: 15rem;
+}
+.product-image-3 {
+  width: 12rem;
 }
 
 /* general styles */
@@ -98,5 +130,24 @@ body {
 
   .container {
     width: 100%;
+  }
+
+  .product {
+    height: auto;
+  }
+
+  .product-images {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+  }
+
+  .product-images img {
+    margin: 1rem 0;
+  }
+
+  .product-description {
+    width: 90%;
+    margin: 0 auto;
   }
 }
