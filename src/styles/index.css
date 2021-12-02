@@ -92,6 +92,27 @@ body {
   object-fit: contain;
 }
 
+/* home styles */
+.sub-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.section-1 img {
+  width: 50%;
+}
+
+.section-3 img {
+  width: 10%;
+}
+
+.section-3,
+.section-1,
+.section-2 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
 /* general styles */
 .list-non-bullet {
   list-style: none;
@@ -144,5 +165,13 @@ body {
   .product-description {
     width: 90%;
     margin: 0 auto;
+  }
+
+  .home {
+    width: 90%;
+  }
+
+  .section-3 img {
+    width: 50%;
   }
 }
