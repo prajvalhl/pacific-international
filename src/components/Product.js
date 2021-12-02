@@ -7,9 +7,9 @@ export function Product() {
   return (
     <div className="container product">
       <div className="product-images">
-        <img src={product1} alt="product-image-1" className="product-image-1" />
-        <img src={product2} alt="product-image-2" className="product-image-2" />
-        <img src={product3} alt="product-image-3" className="product-image-3" />
+        <img src={product1} alt="product-1" />
+        <img src={product2} alt="product-2" />
+        <img src={product3} alt="product-3" />
       </div>
       <div className="product-description">
         <p>
