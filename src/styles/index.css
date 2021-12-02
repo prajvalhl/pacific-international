@@ -10,6 +10,10 @@ media query */
   --border-color: #dadce0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding-top: 6rem;
