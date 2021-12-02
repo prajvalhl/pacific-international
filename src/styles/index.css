@@ -72,7 +72,6 @@ body {
 /* products */
 .product {
   position: relative;
-  height: 100vh;
 }
 
 .product-images {
@@ -106,11 +105,20 @@ body {
   width: 10%;
 }
 
-.section-3,
 .section-1,
-.section-2 {
+.section-2,
+.section-3 {
   text-align: center;
-  margin: 1rem 0;
+  margin-top: 3rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.section-3 {
+  border-bottom: none;
+}
+
+.section-1 {
+  margin-top: 0;
 }
 
 /* general styles */
@@ -173,5 +181,14 @@ body {
 
   .section-3 img {
     width: 50%;
+  }
+
+  .section-1 img {
+    width: 100%;
+  }
+
+  .about-body {
+    width: 90%;
+    margin: 0 auto;
   }
 }
