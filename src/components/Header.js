@@ -18,7 +18,7 @@ export function Header() {
   return (
     <div className="header">
       <nav className="navigation">
-        <div>
+        <div onClick={() => window.scrollTo(0, 0)}>
           <NavLink to="/">
             <img src={logo} alt="pacific-international-logo" className="logo" />
           </NavLink>

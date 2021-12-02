@@ -15,6 +15,7 @@ export function SideNav() {
 
   function hideSideNavBar() {
     setShowMenu(false);
+    window.scrollTo(0, 0);
   }
 
   return (
