@@ -1,16 +1,8 @@
 import React from "react";
-import { useNav } from "../nav-context";
 
 export function Home() {
-  const { setShowMenu } = useNav();
-
   return (
-    <div
-      className="container"
-      onClick={() => {
-        setShowMenu(false);
-      }}
-    >
+    <div className="container">
       <h1>This is Home!</h1>
     </div>
   );
