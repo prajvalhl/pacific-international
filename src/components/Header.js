@@ -54,7 +54,9 @@ export function Header() {
           }}
         >
           {showMenu ? (
-            <span className="material-icons">close</span>
+            <span style={{ color: "white" }} className="material-icons">
+              close
+            </span>
           ) : (
             <span className="material-icons">menu</span>
           )}

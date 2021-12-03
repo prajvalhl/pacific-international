@@ -8,7 +8,7 @@ export function SideNav() {
   function active({ isActive }) {
     return {
       fontWeight: isActive && "bold",
-      color: "var(--primary-color)",
+      color: "white",
       textDecoration: "none",
     };
   }
